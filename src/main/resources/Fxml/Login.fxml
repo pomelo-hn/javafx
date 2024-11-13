@@ -14,20 +14,20 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/login.css"
             xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.jmc.mazebank.Controllers.LoginController">
-   <VBox prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0"
-         AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-      <FontAwesomeIconView glyphName="BANK" size="30"/>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Maze Bank"/>
-   </VBox>
-   <VBox layoutX="235.0" layoutY="31.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container"
-         AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
-      <Label id="choice-prompt-text" text="Choose Your Account Type:"/>
-      <ChoiceBox fx:id="acc_selector" prefWidth="90.0" styleClass="account_selector"/>
-      <Label fx:id="payee_address_lbl" text="Payee Address:"/>
-      <TextField fx:id="payee_address_fld" styleClass="input_field"/>
-      <Label text="Password:"/>
-      <PasswordField fx:id="password_fld" styleClass="input_field"/>
-      <Button fx:id="login_btn" mnemonicParsing="false" text="Login"/>
-      <Label fx:id="error_lbl" styleClass="error_lbl" />
-   </VBox>
+    <VBox prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <FontAwesomeIconView glyphName="BANK" size="30"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="High Bank"/>
+    </VBox>
+    <VBox layoutX="235.0" layoutY="31.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container"
+          AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <Label id="choice-prompt-text" text="Выбирите тип вашего аккаунта: "/>
+        <ChoiceBox fx:id="acc_selector" prefWidth="90.0" styleClass="account_selector"/>
+        <Label fx:id="payee_address_lbl" text="Идентификатор счета:"/>
+        <TextField fx:id="payee_address_fld" styleClass="input_field"/>
+        <Label text="Пароль:"/>
+        <PasswordField fx:id="password_fld" styleClass="input_field"/>
+        <Button fx:id="login_btn" mnemonicParsing="false" text="Войти"/>
+        <Label fx:id="error_lbl" styleClass="error_lbl" />
+    </VBox>
 </AnchorPane>

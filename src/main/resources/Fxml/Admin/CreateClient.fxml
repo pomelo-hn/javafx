@@ -13,28 +13,28 @@
             stylesheets="@../../Styles/CreateClient.css" xmlns="http://javafx.com/javafx/18"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.jmc.mazebank.Controllers.Admin.CreateClientController">
-   <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Client Account"
+   <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Создать аккаунт нового клиента: "
          AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0"/>
    <VBox fillWidth="false" layoutX="14.0" layoutY="41.0" prefHeight="700.0" prefWidth="600.0"
          AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:"/>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Имя:"/>
       <TextField fx:id="fName_fld"/>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:"/>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия:"/>
       <TextField fx:id="lName_fld"/>
-      <Text layoutX="10.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:"/>
+      <Text layoutX="10.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль:"/>
       <TextField fx:id="password_fld" layoutX="10.0" layoutY="69.0"/>
-      <Text layoutX="10.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payee Address:"/>
+      <Text layoutX="10.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Создать идентификатор счета:"/>
       <CheckBox fx:id="pAddress_box" mnemonicParsing="false"/>
       <Label fx:id="pAddress_lbl" styleClass="payee_address_lbl"/>
-      <Text layoutX="10.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts:"/>
-      <CheckBox fx:id="ch_acc_box" mnemonicParsing="false" text="Add Checking Account"/>
-      <Text layoutX="10.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Account Balance:"/>
+      <Text layoutX="10.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Счета:"/>
+      <CheckBox fx:id="ch_acc_box" mnemonicParsing="false" text="Добавить расчетный счет"/>
+      <Text layoutX="10.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Баланс расчетного счета:"/>
       <TextField fx:id="ch_amount_fld" layoutX="10.0" layoutY="114.0"/>
       <CheckBox fx:id="sv_acc_box" layoutX="10.0" layoutY="207.0" mnemonicParsing="false"
-                text="Add Savings Account"/>
-      <Text layoutX="10.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account Balance:"/>
+                text="Добавить сберегательный счет"/>
+      <Text layoutX="10.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Баланс сберегательнего счета:"/>
       <TextField fx:id="sv_amount_fld" layoutX="10.0" layoutY="245.0"/>
-      <Button fx:id="create_client_btn" mnemonicParsing="false" text="Create New Client"/>
+      <Button fx:id="create_client_btn" mnemonicParsing="false" text="Создать нового клиента"/>
       <Label fx:id="error_lbl" layoutX="10.0" layoutY="175.0" styleClass="error_lbl" />
    </VBox>
 </AnchorPane>
