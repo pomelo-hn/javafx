@@ -28,13 +28,6 @@ public class ClientCellController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         bindData();
         delete_btn.setOnAction(event -> deleteClient());
-        ClientsController clientsController = new ClientsController();
-        clientsController.initialize(url, resourceBundle);
-        clientsController.clients_listview.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
-            if (newValue != null) {
-                bindData();
-            }
-        });
     }
 
     private void bindData() {
