@@ -17,6 +17,11 @@ public class ClientsController implements Initializable {
         initClientsList();
         clients_listview.setItems(Model.getInstance().getClients());
         clients_listview.setCellFactory(e -> new ClientCellFactory());
+        clients_listview.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                initClientsList();
+            }
+        });
     }
 
     private void initClientsList() {
