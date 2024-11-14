@@ -6,13 +6,16 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:identifier.sqlite</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
+      </jdbc-additional-properties>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="mazebank" uuid="04c6021f-c783-448f-96ec-6d0f0a0ef991">
+    <data-source source="LOCAL" name="mazebank [2]" uuid="18f4c7f2-307e-4c46-bd7b-8a9e4122d2f8">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\java_bank\mazebank.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\work\project\javafxfinal\mazebank.db</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
       </jdbc-additional-properties>

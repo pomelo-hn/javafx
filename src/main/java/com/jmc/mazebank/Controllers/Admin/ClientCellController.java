@@ -26,13 +26,24 @@ public class ClientCellController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        bindData();
+        delete_btn.setOnAction(event -> deleteClient());
+        ClientsController clientsController = new ClientsController();
+        clientsController.initialize(url, resourceBundle);
+        clientsController.clients_listview.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                bindData();
+            }
+        });
+    }
+
+    private void bindData() {
         fName_lbl.textProperty().bind(client.firstNameProperty());
         lName_lbl.textProperty().bind(client.lastNameProperty());
         pAddress_lbl.textProperty().bind(client.pAddressProperty());
         ch_acc_lbl.textProperty().bind(client.checkingAccountProperty().asString());
         sv_acc_lbl.textProperty().bind(client.savingsAccountProperty().asString());
         date_lbl.textProperty().bind(client.dateProperty().asString());
-        delete_btn.setOnAction(event -> deleteClient());
     }
 
     private void deleteClient(){

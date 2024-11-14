@@ -184,7 +184,7 @@ public class Model {
         try {
             String num = resultSet.getString("AccountNumber");
             int tLimit = (int) resultSet.getDouble("TransactionLimit");
-            double balance = resultSet.getDouble("Balance");
+            float balance = resultSet.getFloat("Balance");
             account = new CheckingAccount(pAddress, num, balance, tLimit);
         }catch (Exception e){
             e.printStackTrace();
@@ -198,7 +198,7 @@ public class Model {
         try {
             String num = resultSet.getString("AccountNumber");
             double wLimit = resultSet.getDouble("WithdrawalLimit");
-            double balance = resultSet.getDouble("Balance");
+            float balance = resultSet.getFloat("Balance");
             account = new SavingsAccount(pAddress, num, balance, wLimit);
         }catch (Exception e){
             e.printStackTrace();

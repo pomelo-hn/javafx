@@ -83,28 +83,28 @@ public class DatabaseDriver {
 	}
 
 	// Method returns savings account balance
-	public double getSavingsAccountBalance(String pAddress) {
+	public float getSavingsAccountBalance(String pAddress) {
 		Statement statement;
 		ResultSet resultSet;
-		double balance = 0;
+		float balance = 0;
 		try {
 			statement = this.conn.createStatement();
 			resultSet = statement.executeQuery("SELECT * FROM SavingsAccounts WHERE Owner='" + pAddress + "';");
-			balance = resultSet.getDouble("Balance");
+			balance = resultSet.getFloat("Balance");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return balance;
 	}
 
-	public double getChekingAccountBalance(String pAddress) {
+	public float getChekingAccountBalance(String pAddress) {
 		Statement statement;
 		ResultSet resultSet;
-		double balance = 0;
+		float balance = 0;
 		try {
 			statement = this.conn.createStatement();
 			resultSet = statement.executeQuery("SELECT * FROM CheckingAccounts WHERE Owner='" + pAddress + "';");
-			balance = resultSet.getDouble("Balance");
+			balance = resultSet.getFloat("Balance");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
