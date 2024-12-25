@@ -6,7 +6,7 @@
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="replish_view_container" stylesheets="@../../Styles/Replish.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.mazebank.Controllers.Client.ReplenishController">
-    <Label layoutX="572.0" layoutY="87.0" text="Перевести на сберегательный счет:" AnchorPane.rightAnchor="81.0" AnchorPane.topAnchor="87.0" />
+    <Label layoutX="246.0" layoutY="101.0" text="Пополнить счет:" AnchorPane.rightAnchor="274.0" AnchorPane.topAnchor="101.0" />
     <Text fx:id="from_text" layoutX="246.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Откуда" AnchorPane.leftAnchor="246.0" AnchorPane.topAnchor="254.20000076293945" />
     <Text fx:id="acc_from_text" layoutX="199.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Идентификатор" AnchorPane.leftAnchor="199.0" AnchorPane.topAnchor="295.20000076293945" />
     <FontAwesomeIconView glyphName="BANK" layoutX="216.0" layoutY="268.0" size="20" AnchorPane.rightAnchor="611.1428565979004" AnchorPane.topAnchor="250.8571434020996" />
