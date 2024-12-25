@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="replish_view_container" stylesheets="@../../Styles/Replish.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.mazebank.Controllers.Client.ReplenishController">
+    <Label layoutX="572.0" layoutY="87.0" text="Перевести на сберегательный счет:" AnchorPane.rightAnchor="81.0" AnchorPane.topAnchor="87.0" />
+    <Text fx:id="from_text" layoutX="246.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Откуда" AnchorPane.leftAnchor="246.0" AnchorPane.topAnchor="254.20000076293945" />
+    <Text fx:id="acc_from_text" layoutX="199.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Идентификатор" AnchorPane.leftAnchor="199.0" AnchorPane.topAnchor="295.20000076293945" />
+    <FontAwesomeIconView glyphName="BANK" layoutX="216.0" layoutY="268.0" size="20" AnchorPane.rightAnchor="611.1428565979004" AnchorPane.topAnchor="250.8571434020996" />
+    <Text fx:id="amount_text" layoutX="246.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сумма" AnchorPane.leftAnchor="246.0" AnchorPane.topAnchor="337.20000076293945" />
+    <ChoiceBox fx:id="bank_selector" layoutX="310.0" layoutY="249.0" prefHeight="25.0" prefWidth="230.0" styleClass="bank_selector" />
+    <FontAwesomeIconView glyphName="ID_CARD" layoutX="169.0" layoutY="309.0" size="20" AnchorPane.rightAnchor="661.0" AnchorPane.topAnchor="291.8571434020996" />
+    <TextField fx:id="acc_from" layoutX="309.0" layoutY="285.0" prefHeight="26.0" prefWidth="221.0" AnchorPane.rightAnchor="311.0" AnchorPane.topAnchor="285.0" />
+    <FontAwesomeIconView glyphName="GLOBE" layoutX="217.0" layoutY="352.0" size="24" AnchorPane.rightAnchor="612.4285717010498" AnchorPane.topAnchor="331.4285717010498" />
+    <TextField fx:id="amount" layoutX="310.0" layoutY="327.0" prefHeight="26.0" prefWidth="221.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="327.0" />
+    <Button fx:id="trans_btn" layoutX="310.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="221.0" text="Перевести">
+        <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARROW_UP" size="20" />
+        </graphic>
+    </Button>
+</AnchorPane>

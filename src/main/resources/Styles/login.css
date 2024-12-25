@@ -18,16 +18,16 @@
 }
 
 /* Account Selector ChoiceBox Styles */
-.account_selector {
+.bank_selector {
     -fx-background-color: #ECF39E;
 }
 
-.account_selector .label {
+.bank_selector .label {
     -fx-text-fill: #132A13;
     -fx-font-size: 1.1em;
 }
 
-.account_selector .arrow {
+.bank_selector .arrow {
     -fx-background-color: #132A13;
 }
 

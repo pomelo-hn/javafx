@@ -22,6 +22,7 @@ public class ViewFactory {
     private AnchorPane dashboardView;
     private AnchorPane transactionsView;
     private AnchorPane accountsView;
+    private AnchorPane replenishView;
 
     // Admin Views
     private final ObjectProperty<AdminMenuOptions> adminSelectedMenuItem;
@@ -81,6 +82,17 @@ public class ViewFactory {
             }
         }
         return accountsView;
+    }
+
+    public AnchorPane getReplenishView() {
+        if (replenishView == null){
+            try {
+                replenishView = new FXMLLoader(getClass().getResource("/Fxml/Client/Replenish.fxml")).load();
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return replenishView;
     }
 
     public void showClientWindow() {

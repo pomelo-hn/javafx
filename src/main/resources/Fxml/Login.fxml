@@ -22,7 +22,7 @@
     <VBox layoutX="235.0" layoutY="31.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container"
           AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
         <Label id="choice-prompt-text" text="Выбирите тип вашего аккаунта: "/>
-        <ChoiceBox fx:id="acc_selector" prefWidth="90.0" styleClass="account_selector"/>
+        <ChoiceBox fx:id="acc_selector" prefWidth="90.0" styleClass="bank_selector"/>
         <Label fx:id="payee_address_lbl" text="Идентификатор счета:"/>
         <TextField fx:id="payee_address_fld" styleClass="input_field"/>
         <Label text="Пароль:"/>

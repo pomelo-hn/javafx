@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="accounts_view_container"
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="replish_view_container"
             stylesheets="@../../Styles/Accounts.css" xmlns="http://javafx.com/javafx/18"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.mazebank.Controllers.Client.AccountsController">
    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Расчетный счет"

@@ -16,6 +16,7 @@ public class ClientMenuController implements Initializable {
     public Button profile_btn;
     public Button logout_btn;
     public Button report_btn;
+    public Button replenish_btn;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -26,6 +27,7 @@ public class ClientMenuController implements Initializable {
         dashboard_btn.setOnAction(event -> onDashboard());
         transaction_btn.setOnAction(event -> onTransactions());
         accounts_btn.setOnAction(event -> onAccounts());
+        replenish_btn.setOnAction(event -> onReplenish());
         logout_btn.setOnAction(event -> onLogout());
     }
 
@@ -39,6 +41,10 @@ public class ClientMenuController implements Initializable {
 
     private void onAccounts() {
         Model.getInstance().getViewFactory().getClientSelectedMenuItem().set(ClientMenuOptions.ACCOUNTS);
+    }
+
+    private void onReplenish() {
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set(ClientMenuOptions.REPLENISH);
     }
 
     private void onLogout() {

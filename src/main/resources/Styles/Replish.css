@@ -4,9 +4,10 @@
 }
 
 .replish_view_container Text {
-    -fx-fill: #888888;
-    -fx-font-size: 1.4em;
+    -fx-fill: #000000;
+    -fx-font-size: 1.2em;
     -fx-font-family: "Calibri Light";
+    -fx-font-weight: bold;
 }
 
 .replish_view_container VBox {
@@ -20,8 +21,8 @@
     -fx-font-size: 1.2em;
 }
 
-.replish_view_container VBox Label {
-    -fx-font-size: 1.2em;
+.replish_view_container Label {
+    -fx-font-size: 3.4em;
     -fx-font-weight: bold;
 }
 
@@ -45,4 +46,20 @@
     -fx-cursor: hand;
 }
 
+.bank_selector {
+    -fx-background-color: #e6e6e6;
+}
+
+.bank_selector .label {
+    -fx-text-fill: #132A13;
+    -fx-font-size: 1.1em;
+}
+
+.bank_selector .arrow {
+    -fx-background-color: #132A13;
+}
+
+#choice-box-popup-menu {
+    -fx-background-color: #e6e6e6;
+}
 
